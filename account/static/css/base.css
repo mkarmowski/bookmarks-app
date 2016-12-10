@@ -207,13 +207,13 @@ ul.messages li a.close {
 .count {
     color:#aaa;
     border:3px solid #bbb;
-    border-radius:26px;
+    border-radius:10px;
     padding:10px 20px;
     margin:20px 10px 0;
 }
 a.like, a.follow { float:right; margin-top:-8px; }
 
-#image-list { overflow:auto; }
+#image-list { overflow:hidden; }
 #image-list .image {
     float:left;
     width:220px;
