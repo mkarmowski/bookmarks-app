@@ -26,4 +26,6 @@ urlpatterns = (
     # register urls
     url(r'^register/$', views.register, name='register'),
     url(r'^edit/$', views.edit, name='edit'),
+    url(r'^users/$', views.user_list, name='user_list'),
+    url(r'^users/(?P<username>[-\w]+)/$', views.user_detail, name='user_detail'),
 )

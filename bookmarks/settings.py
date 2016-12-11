@@ -150,3 +150,5 @@ SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'hDphe4BKfljJ5X4FXACSAqWG'
 
 TEMPLATE_DEBUG = True
 THUMBNAIL_DEBUG = True
+
+ABSOLUTE_URL_OVERRIDES = {'auth.user': lambda u: reverse_lazy('user_detail', args=[u.username])}
