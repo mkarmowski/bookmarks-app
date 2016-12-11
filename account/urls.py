@@ -3,7 +3,7 @@ from django.contrib.auth import views as auth_views
 from . import views
 
 
-urlpatterns = (
+urlpatterns = [
     # previous login view
     # url(r'^login/$', views.user_login, name='login'),
 
@@ -27,5 +27,7 @@ urlpatterns = (
     url(r'^register/$', views.register, name='register'),
     url(r'^edit/$', views.edit, name='edit'),
     url(r'^users/$', views.user_list, name='user_list'),
+    url(r'^users/follow/$', views.user_follow, name='user_follow'),
     url(r'^users/(?P<username>[-\w]+)/$', views.user_detail, name='user_detail'),
-)
+
+]
