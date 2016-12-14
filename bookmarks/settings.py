@@ -27,7 +27,7 @@ SECRET_KEY = 'ot14ijw_zvune!11^-k8=^q(!vvsmh^e)u(08#89531#4r=xw^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mysite.com', '127.0.0.1', ]
+ALLOWED_HOSTS = ['mysite.com', '127.0.0.1', 'localhost', ]
 
 
 # Application definition
@@ -153,3 +153,8 @@ TEMPLATE_DEBUG = True
 THUMBNAIL_DEBUG = True
 
 ABSOLUTE_URL_OVERRIDES = {'auth.user': lambda u: reverse_lazy('user_detail', args=[u.username])}
+
+
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 0
